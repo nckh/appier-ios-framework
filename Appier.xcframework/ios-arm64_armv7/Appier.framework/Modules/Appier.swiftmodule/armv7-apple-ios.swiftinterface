@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)
+// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
 // swift-module-flags: -target armv7-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Appier
 @_exported import Appier
 import CommonCrypto
@@ -77,8 +77,8 @@ extension CampaignPresenterView : UIKit.UIViewControllerTransitioningDelegate {
   @objc(openURL:) final public func open(_ url: Foundation.URL)
   @objc(viewWillTransitionWithTransitionCoordinator:) final public func viewWillTransition(with coordinator: UIKit.UIViewControllerTransitionCoordinator)
   @objc public static let shared: Appier.AiDeal
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(AIDConfiguration) @objcMembers public class Configuration : ObjectiveC.NSObject {
   public var badge: Appier.BadgeConfiguration {
@@ -120,8 +120,8 @@ extension CampaignPresenterView : UIKit.UIViewControllerTransitioningDelegate {
     @objc set
   }
   @objc public init(identifier: Swift.String)
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 extension Conversion : Swift.Encodable {
   public func encode(to encoder: Swift.Encoder) throws
@@ -138,8 +138,8 @@ extension Conversion : Swift.Encodable {
     @objc set
   }
   @objc public init(identifier: Swift.String)
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 extension ConversionItem : Swift.Encodable {
   public func encode(to encoder: Swift.Encoder) throws
@@ -152,6 +152,6 @@ extension Data {
   @objc public class var bundle: Foundation.Bundle {
     @objc get
   }
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
